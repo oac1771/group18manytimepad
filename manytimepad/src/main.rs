@@ -1,3 +1,6 @@
+use hex;
+
 fn main() {
-    println!("Hello, world!");
+    let foo = hex::decode("160111433b00035f536110435a380402561240555c526e1c0e431300091e4f04451d1d490d1c49010d000a0a4510111100000d434202081f0755034f13031600030d0204040e").unwrap();
+    println!("{:?}", foo);
 }
